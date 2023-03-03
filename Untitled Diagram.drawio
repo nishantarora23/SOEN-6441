@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2023-03-03T02:05:27.146Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="vwhoyisJ1EFzmVe0MSGU" version="20.8.16" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-03T02:24:59.277Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36" etag="hbUo2ijEDp5qWNUEcGfO" version="20.8.16" type="github">
   <diagram name="Page-1" id="kq0mud_X4aWQQ3O8aLVe">
-    <mxGraphModel dx="505" dy="441" grid="1" gridSize="9" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
+    <mxGraphModel dx="1167" dy="3937" grid="1" gridSize="9" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2339" pageHeight="3300" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="UNerEi0BjpgyDsp8obnF-13" value="Address" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="18" y="261" width="288" height="297" as="geometry" />
+          <mxGeometry x="18" y="315" width="288" height="297" as="geometry" />
         </mxCell>
         <mxCell id="UNerEi0BjpgyDsp8obnF-14" value="- streetName: String&#xa;- city: String&#xa;- province: String&#xa;- country: String&#xa;- postalCode: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="UNerEi0BjpgyDsp8obnF-13" vertex="1">
           <mxGeometry y="26" width="288" height="82" as="geometry" />
@@ -17,54 +17,71 @@
           <mxGeometry y="116" width="288" height="181" as="geometry" />
         </mxCell>
         <mxCell id="UNerEi0BjpgyDsp8obnF-334" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&lt;b&gt;RentalProperty&lt;/b&gt;&lt;/i&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- address: Address&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px;&quot;&gt;- leases: List&amp;lt;Lease&amp;gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ RentalProperty (address: Address, leases: List&amp;lt;Lease&amp;gt;)&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px;&quot;&gt;+ getAddress (): Address&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px;&quot;&gt;+ setAddress (Address address): void&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px;&quot;&gt;+ getLeases (): List&amp;lt;Lease&amp;gt;&lt;br style=&quot;border-color: var(--border-color); padding: 0px; margin: 0px;&quot;&gt;+ setLeases (List&amp;lt;Lease&amp;gt;): void&amp;nbsp;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;i&gt;+ getPropertyType (): String&lt;/i&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="729" y="126" width="315" height="162" as="geometry" />
+          <mxGeometry x="711" y="270" width="315" height="162" as="geometry" />
         </mxCell>
-        <mxCell id="UNerEi0BjpgyDsp8obnF-337" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.55;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="UNerEi0BjpgyDsp8obnF-13" target="UNerEi0BjpgyDsp8obnF-334" edge="1">
+        <mxCell id="UNerEi0BjpgyDsp8obnF-337" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1.014;exitY=0.595;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="UNerEi0BjpgyDsp8obnF-14" target="UNerEi0BjpgyDsp8obnF-334" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="306" y="387" as="sourcePoint" />
             <mxPoint x="466" y="387" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="162" y="216" />
+              <mxPoint x="495" y="392" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="UNerEi0BjpgyDsp8obnF-338" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Apartment&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- apartmentNumber: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- numberOfBedrooms: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- numberOfBathrooms: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- squareFootage: double&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Apartment (apartmentNumber: int, numberOfBedrooms: int,&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;numberOfBathrooms: int, squareFootage: double)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getApartmentNumber (): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setApartmentNumber (apartmentNumber: int): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getNumberOfBedrooms (): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setNumberOfBedrooms (numberOfBedrooms: int): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getSquareFootage (): double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setSquareFootage (squareFootage: double): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getPropertyType (): String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="360" y="378" width="333" height="234" as="geometry" />
+          <mxGeometry x="360" y="621" width="333" height="234" as="geometry" />
         </mxCell>
         <mxCell id="UNerEi0BjpgyDsp8obnF-339" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;entryX=0.544;entryY=1.016;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryPerimeter=0;" parent="1" source="UNerEi0BjpgyDsp8obnF-338" target="UNerEi0BjpgyDsp8obnF-334" edge="1">
           <mxGeometry x="0.8549" y="-9" width="160" relative="1" as="geometry">
             <mxPoint x="684" y="378" as="sourcePoint" />
             <mxPoint x="844" y="378" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="527" y="324" />
-              <mxPoint x="900" y="324" />
+              <mxPoint x="527" y="468" />
+              <mxPoint x="882" y="468" />
             </Array>
             <mxPoint x="-9" y="9" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="UNerEi0BjpgyDsp8obnF-340" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Condo&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- unitNumber: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- streetNumber: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Condo (unitNumber: int, streetNumber: int&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getUnitNumber (): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setUnitNumber (unitNumber: int): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getStreetNumber (): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setStreetNumber (streetNumber: int): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
-          <mxGeometry x="729" y="378" width="333" height="153" as="geometry" />
+          <mxGeometry x="729" y="621" width="333" height="153" as="geometry" />
         </mxCell>
         <mxCell id="Be0yeg003_AzSau2bKIg-3" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="UNerEi0BjpgyDsp8obnF-340">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="900" y="324" as="sourcePoint" />
+            <mxPoint x="1224" y="621" as="sourcePoint" />
             <mxPoint x="1285" y="423" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="900" y="378" />
+              <mxPoint x="1224" y="468" />
+              <mxPoint x="882" y="468" />
+              <mxPoint x="882" y="621" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="Be0yeg003_AzSau2bKIg-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;House&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- streetNumber: int&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ House (streetNumber: int&lt;span style=&quot;background-color: initial;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getStreetNumber (): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setStreetNumber (streetNumber: int): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1098" y="378" width="243" height="108" as="geometry" />
+          <mxGeometry x="1098" y="621" width="243" height="108" as="geometry" />
         </mxCell>
-        <mxCell id="Be0yeg003_AzSau2bKIg-9" value="" style="endArrow=none;html=1;edgeStyle=orthogonalEdgeStyle;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="Be0yeg003_AzSau2bKIg-8">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="900" y="324" as="sourcePoint" />
-            <mxPoint x="1060" y="324" as="targetPoint" />
+        <mxCell id="Be0yeg003_AzSau2bKIg-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Lease&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tenant: Tenant&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- property: RentalProperty&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- startDate: Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- endDate: Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- rentAmount: double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- rentPaid: boolean&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ Lease (tenant: Tenant, property: RentalProperty), startDate: Date,&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;endDate: Date, rentalAmount: double, rentPaid: boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getTenant (): Tenant&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setTenant (Tenant tenant): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getStartDate (): Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setStartDate (): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getEndDate (): Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setEndDate (): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getRentAmount (): double&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setRentAmount (): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ getRentPaid (): boolean&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ setRentPaid (): void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
+          <mxGeometry x="423" y="-99" width="369" height="306" as="geometry" />
+        </mxCell>
+        <mxCell id="Be0yeg003_AzSau2bKIg-13" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.463;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Be0yeg003_AzSau2bKIg-12" target="UNerEi0BjpgyDsp8obnF-334">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="495" y="207" as="sourcePoint" />
+            <mxPoint x="655" y="207" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="594" y="351" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Be0yeg003_AzSau2bKIg-12" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Lease&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tenant: Tenant&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ method(): Type&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" vertex="1" parent="1">
-          <mxGeometry x="306" width="160" height="90" as="geometry" />
+        <mxCell id="Be0yeg003_AzSau2bKIg-14" value="Tenant" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=0;" vertex="1" parent="1">
+          <mxGeometry x="63" y="-54" width="225" height="197" as="geometry" />
+        </mxCell>
+        <mxCell id="Be0yeg003_AzSau2bKIg-15" value="- firstName: String&#xa;- lastName: String&#xa;- email: String&#xa;- leases: List&lt;Lease&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Be0yeg003_AzSau2bKIg-14">
+          <mxGeometry y="26" width="225" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Be0yeg003_AzSau2bKIg-16" value="&#xa;&#xa;&#xa;&#xa;" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;html=0;" vertex="1" parent="Be0yeg003_AzSau2bKIg-14">
+          <mxGeometry y="90" width="225" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Be0yeg003_AzSau2bKIg-17" value="+ getFirstName (): String&#xa;+ setFirstName (String firstName): void&#xa;+ getLastName (): String&#xa;+ setLastName (String lastName): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="Be0yeg003_AzSau2bKIg-14">
+          <mxGeometry y="98" width="225" height="99" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
